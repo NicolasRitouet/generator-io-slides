@@ -32,7 +32,8 @@ describe('io-slides generator', function () {
             '.jshintrc',
             'package.json',
             '.jshintrc',
-            '.editorconfig'
+            '.editorconfig',
+            'favicon.ico'
         ];
 
         helpers.mockPrompt(this.app, {

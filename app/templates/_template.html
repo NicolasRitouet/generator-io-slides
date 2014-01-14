@@ -25,7 +25,7 @@ URL: https://code.google.com/p/io-2012-slides
 <body style="opacity: 0">
 
 <slides class="layout-widescreen">
-
+<% if (!isBlank) { %>
   <slide class="logoslide nobackground">
     <article class="flexbox vcenter">
       <span><img src="images/google_developers_logo.png"></span>
@@ -393,7 +393,28 @@ function helloWorld(world) {
   </slide>
 
   <slide class="backdrop"></slide>
+  <% } %>
 
+<% if (isBlank) { %>
+  <slide class="logoslide nobackground">
+    <hgroup>
+      <h2>Title of your slide</h2>
+      <h3>Subtitle of your slide</h3>
+    </hgroup>
+    <article>
+        <ul>
+          <li>Point I wanted to make #1</li>
+          <li>Point I wanted to make #2</li>
+          <li>Point I wanted to make #3</li>
+          <li>Example <a href="#">link</a> in notes.</li>
+        </ul>
+    </article>
+  </slide>
+
+  <!-- Slide backdrop needed somehow to keep a white background -->
+  <slide class="backdrop"></slide>
+
+  <% } %>
 </slides>
 
 <script>
