@@ -25,6 +25,9 @@ Don't hesitate to fill an issue if you find a bug or need a feature. Pull reques
 
 ## Release history
 
+#### [0.0.2](https://github.com/NicolasRitouet/generator-io-slides/releases/tag/0.0.2):
+- option to create a blank presentation
+
 #### [0.0.1](https://github.com/NicolasRitouet/generator-io-slides/releases/tag/0.0.1):
 - scaffold a presentation with user name and presentation name
 - publication on npm
