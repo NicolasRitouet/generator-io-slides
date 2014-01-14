@@ -48,6 +48,7 @@ IoSlidesGenerator.prototype.app = function app() {
   this.copy('_template.html', 'template.html');
   this.copy('_slide_config.js', 'slide_config.js');
 
+  this.copy('_README.md', 'README.md');
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
 };

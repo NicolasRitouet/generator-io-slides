@@ -20,14 +20,24 @@ describe('io-slides generator', function () {
     });
 
     it('creates expected files', function (done) {
+
+        this.name = 'John Doe';
+        this.presentationName = 'Awesome presentation';
+        
         var expected = [
-            // add files you expect to exist here.
+            ['slide_config.js', /Awesome presentation/],
+            'js/slide-deck.js',
+            'README.md',
+            'template.html',
+            '.jshintrc',
+            'package.json',
             '.jshintrc',
             '.editorconfig'
         ];
 
         helpers.mockPrompt(this.app, {
-            'someOption': true
+            'name': this.name,
+            'presentationName': this.presentationName
         });
         this.app.options['skip-install'] = true;
         this.app.run({}, function () {
