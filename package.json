@@ -1,7 +1,7 @@
 {
   "name": "generator-io-slides",
-  "version": "0.0.0",
-  "description": "A generator for Yeoman",
+  "version": "0.0.1",
+  "description": "A yeoman generator for IO-slides, a presentation tool based on google IO-2012-slides with a few enhancements.",
   "keywords": [
     "yeoman-generator"
   ],
