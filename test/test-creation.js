@@ -38,7 +38,8 @@ describe('io-slides generator', function () {
 
         helpers.mockPrompt(this.app, {
             'name': this.name,
-            'presentationName': this.presentationName
+            'presentationName': this.presentationName,
+            'isBlank': false
         });
         this.app.options['skip-install'] = true;
         this.app.run({}, function () {

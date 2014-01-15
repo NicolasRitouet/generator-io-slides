@@ -1,7 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: '<%= _.humanize(presentationTitle) %>',
+    title: '<%= _.humanize(presentationName) %>',
     subtitle: '<%= _.humanize(presentationSubTitle) %>',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
